@@ -12,9 +12,9 @@
       <text>{{now.cond.txt}} | {{now.wind.dir}}{{now.wind.sc}}级</text>
     </view>
     <view class="other">
-      <view class="border_r"><text class="title">相对湿度</text><text class="info">31%</text></view>
-      <view class="border_r"><text class="title">降水量</text><text class="info">0mm</text></view>
-      <view><text class="title">能见度</text><text class="info">10km</text></view>
+      <view class="border_r"><text class="title">相对湿度</text><text class="info">{{now.hum}}%</text></view>
+      <view class="border_r"><text class="title">降水量</text><text class="info">{{now.pcpn}}mm</text></view>
+      <view><text class="title">能见度</text><text class="info">{{now.vis}}km</text></view>
     </view>
   </view>
 
@@ -26,8 +26,8 @@
           <text>舒适度指数</text>
         </view>
         <view class="list_r">
-          <text class="list_t">较不舒适</text>
-          <text>白天天气多云，同时会感到有些热，不很舒适。</text>
+          <text class="list_t">{{suggestion.comf.brf}}</text>
+          <text>{{suggestion.comf.txt}}</text>
         </view>
       </view>
       <view class="list">
@@ -36,8 +36,8 @@
           <text>洗车指数</text>
         </view>
         <view class="list_r">
-          <text class="list_t">较适宜</text>
-          <text>较适宜洗车，未来一天无雨，风力较小，擦洗一新的汽车至少能保持一天。</text>
+          <text class="list_t">{{suggestion.cw.brf}}</text>
+          <text>{{suggestion.cw.txt}}</text>
         </view>
       </view>
       <view class="list">
@@ -46,8 +46,8 @@
           <text>穿衣指数</text>
         </view>
         <view class="list_r">
-          <text class="list_t">炎热</text>
-          <text>天气炎热，建议着短衫、短裙、短裤、薄型T恤衫等清凉夏季服装。</text>
+          <text class="list_t">{{suggestion.drsg.brf}}</text>
+          <text>{{suggestion.drsg.txt}}</text>
         </view>
       </view>
       <view class="list">
@@ -56,8 +56,8 @@
           <text>感冒指数</text>
         </view>
         <view class="list_r">
-          <text class="list_t">少发</text>
-          <text>各项气象条件适宜，发生感冒机率较低。但请避免长期处于空调房间中，以防感冒。</text>
+          <text class="list_t">{{suggestion.flu.brf}}</text>
+          <text>{{suggestion.flu.txt}}</text>
         </view>
       </view>
       <view class="list">
@@ -66,8 +66,8 @@
           <text>运动指数</text>
         </view>
         <view class="list_r">
-          <text class="list_t">较适宜</text>
-          <text>天气较好，户外运动请注意防晒。推荐您进行室内运动。</text>
+          <text class="list_t">{{suggestion.sport.brf}}</text>
+          <text>{{suggestion.sport.txt}}</text>
         </view>
       </view>
       <view class="list">
@@ -76,8 +76,8 @@
           <text>旅游指数</text>
         </view>
         <view class="list_r">
-          <text class="list_t">较适宜</text>
-          <text>天气较好，温度较高，天气较热，但有微风相伴，还是比较适宜旅游的，不过外出时要注意防暑防晒哦！</text>
+          <text class="list_t">{{suggestion.trav.brf}}</text>
+          <text>{{suggestion.trav.txt}}</text>
         </view>
       </view>
       <view class="list">
@@ -86,8 +86,8 @@
           <text>紫外线指数</text>
         </view>
         <view class="list_r">
-          <text class="list_t">中等</text>
-          <text>属中等强度紫外线辐射天气，外出时建议涂擦SPF高于15、PA+的防晒护肤品，戴帽子、太阳镜。</text>
+          <text class="list_t">{{suggestion.uv.brf}}</text>
+          <text>{{suggestion.uv.txt}}</text>
         </view>
       </view>
       

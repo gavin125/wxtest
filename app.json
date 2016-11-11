@@ -1,11 +1,12 @@
 {
   "pages":[
     "pages/weather/weather",
-    "pages/city/city"
+    "pages/city/city",
+    "pages/about/about"
   ],
   "window":{
     "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "个性天气",
+    "navigationBarTitleText": "当前天气",
     "navigationBarTextStyle":"#fff",
 
     "backgroundColor":"#666",
