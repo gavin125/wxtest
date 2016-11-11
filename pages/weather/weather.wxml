@@ -6,7 +6,7 @@
   </view>
 
   <view class="weather">
-    <image class="section" src="http://files.heweather.com/cond_icon/104.png"></image>
+    <image class="section" src="{{now.cond.src}}"></image>
     <view class="aside">
       <text class="temperature">{{now.tmp}}℃</text>
       <text>{{now.cond.txt}} | {{now.wind.dir}}{{now.wind.sc}}级</text>
