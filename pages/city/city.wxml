@@ -1,11 +1,21 @@
-<!--index.wxml-->
+<!--city.wxml-->
 <view class="container">
-  
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  <view class="city">
+    <text>当前城市：{{cur_name}}</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="citytable">
+    <block wx:for="{{citylist}}">
+      <view class="province" >{{item.pro}}<image class="arrow" src="../../images/arrowright.png"></image></view>
+      <view class="leadlist">
+        <block wx:for="{{item.larr}}">
+          <view class="leader">{{item.lea}}<image class="arrow" src="../../images/arrowright.png"></image></view>
+          <view class="citys">
+          <block wx:for="{{item.carr}}">
+            <text class="cityname" bindtap="selecttap" id="{{item.id}}">{{item.city}}</text>
+          </block>
+          </view>
+        </block>
+      </view>
+    </block>
   </view>
 </view>

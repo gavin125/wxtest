@@ -9,7 +9,6 @@ Page({
   },//默认数据
   onLoad: function () {
     var that = this;
-    console.log(that);
     that.getnow(function(d){
       d.now.cond.src="http://files.heweather.com/cond_icon/"+d.now.cond.code+".png"
       that.setData({basic:d.basic,now:d.now})//更新数据
@@ -17,14 +16,13 @@ Page({
     that.getsuggestion(function(d){
       that.setData({suggestion:d.suggestion})//更新数据
     })
-  	console.log(that.data)
   },
   //获取当前天气API
   getnow:function(f){
     wx.request({
       url: 'https://free-api.heweather.com/v5/now', 
       data: {
-        city:'CN101010100',
+        city:app.curid,
         key:'01a7798b060b468abdad006ea3de4713'
       },
       header: {
@@ -40,7 +38,7 @@ Page({
     wx.request({
       url: 'https://free-api.heweather.com/v5/suggestion', 
       data: {
-        city:'CN101010100',
+        city:app.curid,
         key:'01a7798b060b468abdad006ea3de4713'
       },
       header: {
@@ -50,6 +48,10 @@ Page({
         f(res.data.HeWeather5[0]);
       }
     })
+  },
+  //点击当前城市跳转到设置城市页
+  bindViewTap:function(){
+    wx.navigateTo({url: '../city/city'})
   }
   
 })
