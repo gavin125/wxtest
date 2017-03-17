@@ -25,7 +25,7 @@ App({
     }
   },
   globalData:{
-    userInfo:null
+    curid:null
   }
   
 

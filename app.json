@@ -1,9 +1,8 @@
 {
   "pages":[
+    "pages/weather/weather",
     "pages/about/about",
-    "pages/city/city",
-    "pages/weather/weather"
-    
+    "pages/city/city"
   ],
   "window":{
     "navigationBarBackgroundColor": "#000",

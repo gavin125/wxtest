@@ -5,7 +5,7 @@
     <text class="update">{{basic.update.loc}}</text>
   </view>
 
-  <view class="weather">
+  <view class="weather" bindtap="showcurid">
     <image class="section" src="{{now.cond.src}}"></image>
     <view class="aside">
       <text class="temperature">{{now.tmp}}℃</text>

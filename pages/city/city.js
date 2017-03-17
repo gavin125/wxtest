@@ -75,7 +75,7 @@ Page({
     var that=this;
     app.curid = e.currentTarget.id;
     that.setData({cur_id:app.curid,cur_name:that.getname(app.curid)})
-    wx.navigateTo({url: '../weather/weather'})
+    wx.switchTab({url: '../weather/weather'});
   }
   
 })
