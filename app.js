@@ -1,32 +1,17 @@
 //app.js
 App({
-  onLaunch: function () {
+  //1、系统事件部分
+  onLaunch: function () {//小程序初始化事件
     var that=this;
     //调用API从本地缓存中获取数据
-    that.curid = wx.getStorageSync('curid') || "CN101010100"
-    wx.setStorageSync('curid', that.curid)
+    that.curid = wx.getStorageSync('curid') || that.curid;//API：获取本地缓存，若不存在设置为全局属性
+    that.setlocal('curid', that.curid);//调用全局方法
   },
-  getUserInfo:function(cb){
-    var that = this;
-    if(this.globalData.userInfo){
-      typeof cb == "function" && cb(this.globalData.userInfo)
-    }else{
-      //调用登录接口
-      wx.login({
-        success: function () {
-          wx.getUserInfo({
-            success: function (res) {
-              that.globalData.userInfo = res.userInfo;
-              typeof cb == "function" && cb(that.globalData.userInfo)
-            }
-          })
-        }
-      });
-    }
+  //2、自定义全局方法部分
+  setlocal:function(id,val){
+    wx.setStorageSync(id, val);//API：设置本地缓存
   },
-  globalData:{
-    curid:null
-  }
-  
-
+  //3、自定义全局属性部分
+  curid:"CN101010100",
+  version:"1.0"
 })

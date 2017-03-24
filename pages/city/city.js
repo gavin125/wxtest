@@ -74,7 +74,8 @@ Page({
   selecttap:function(e){
     var that=this;
     app.curid = e.currentTarget.id;
-    that.setData({cur_id:app.curid,cur_name:that.getname(app.curid)})
+    app.setlocal('curid', app.curid);
+    //that.setData({cur_id:app.curid,cur_name:that.getname(app.curid)})
     wx.switchTab({url: '../weather/weather'});
   }
   

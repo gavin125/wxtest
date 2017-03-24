@@ -2,6 +2,7 @@
 <view class="container">
   <view class="about">
   <text>产品名称：天气预报</text>
+  <text>版本号：{{v}}</text>
   <text>数据来源：和风天气</text>
   <text>开发时间：2016年11月</text>
   </view>

@@ -6,9 +6,8 @@
   ],
   "window":{
     "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "当前天气",
+    "navigationBarTitleText": "天气预报",
     "navigationBarTextStyle":"#fff",
-
     "backgroundColor":"#666",
     "backgroundTextStyle":"light",
     "enablePullDownRefresh":true
@@ -22,7 +21,7 @@
       "pagePath": "pages/weather/weather",
       "iconPath": "images/tabbar/weather1.png",
       "selectedIconPath": "images/tabbar/weather2.png",
-      "text": "当前天气"
+      "text": "天气预报"
     }, {
       "pagePath": "pages/city/city",
       "iconPath": "images/tabbar/city1.png",

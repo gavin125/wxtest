@@ -1,4 +1,4 @@
-/**index.wxss**/
+/**weather.wxss**/
 
 /*城市信息*/
 .city {padding: 3% 5%; background: #ddd;}
@@ -6,7 +6,7 @@
   background: url('../../images/curcity.png') no-repeat; 
   background-size:auto 100%;  padding-left: 20px;
 }
-.city .update{ font-size: 12px; float: right;
+.city .update{ font-size: 12px; float: right;padding-left: 20px;
 background: url('../../images/update.png') no-repeat; background-size: auto 100%;}
 
 /*天气预报*/

@@ -1,4 +1,4 @@
-<!--index.wxml-->
+<!--weather.wxml-->
 <view class="container">
   <view class="city" bindtap="bindViewTap">
     <text>当前城市：{{basic.city}}</text>
