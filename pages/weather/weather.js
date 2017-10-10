@@ -18,7 +18,7 @@ Page({
   //3、自定义页面方法：获取当前天气API
   getnow:function(fn){
     wx.request({//请求服务器，类似ajax
-      url: 'https://free-api.heweather.com/v5/now', 
+      url: 'https://www.xiaoguge.cn/api/wxtest/now.php', 
       data: {city:app.curid,key:'01a7798b060b468abdad006ea3de4713'},//和风天气提供用户key，可自行注册获得
       header: {'Content-Type': 'application/json'},
       success: function(res) {fn(res.data.HeWeather5[0]);}//成功后将数据传给回调函数执行
@@ -27,7 +27,7 @@ Page({
   //获取生活指数API
   getsuggestion:function(fn){
     wx.request({
-      url: 'https://free-api.heweather.com/v5/suggestion', 
+      url: 'https://www.xiaoguge.cn/api/wxtest/suggestion.php', 
       data: {city:app.curid,key:'01a7798b060b468abdad006ea3de4713'},
       header: {'Content-Type': 'application/json'},
       success: function(res) {fn(res.data.HeWeather5[0]);}
