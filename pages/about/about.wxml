@@ -7,13 +7,10 @@
   <text>开发时间：2016年11月</text>
   </view>
   <view class="about aboutme">
-    <text class="title">作者</text>
-    <text>Gavin</text>
-    <text class="title">邮箱</text>
-    <text>gulei125@163.com</text>
-    <text class="title">博客</text>
-    <text>http://www.cnblogs.com/gulei/</text>
-    <text class="title">GitHub</text>
-    <text>https://github.com/gavin125/wxtest</text>
+    <text class="title">作者：小古哥(Gavin)</text>
+    <text>网站：www.xiaoguge.cn</text>
+    <text class="title">邮箱：gulei125@163.com</text>
+    <text>博客：www.cnblogs.com/gulei</text>
+    <text class="title">GitHub：github.com/gavin125</text>
   </view>
 </view>

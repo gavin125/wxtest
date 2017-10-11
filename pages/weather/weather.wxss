@@ -1,13 +1,11 @@
 /**weather.wxss**/
 
 /*城市信息*/
-.city {padding: 3% 5%; background: #ddd;}
-.city text{font-size: 16px; color: #666;
-  background: url('../../images/curcity.png') no-repeat; 
-  background-size:auto 100%;  padding-left: 20px;
-}
-.city .update{ font-size: 12px; float: right;padding-left: 20px;
-background: url('../../images/update.png') no-repeat; background-size: auto 100%;}
+.city {padding: 3% 5%; background: #ddd; overflow: hidden;}
+.city .dwicon{ width: 30rpx; height: 30rpx; float: left; margin: 5px;}
+.city text{font-size: 16px; color: #666; float: left;}
+.city .zbicon{ width: 30rpx; height: 30rpx; float: right;margin: 8px 5px;}
+.city .update{ font-size: 12px; float: right; width: 110px;}
 
 /*天气预报*/
 .weather{overflow: hidden;background: #cef;color: #58b; padding: 5%; }
